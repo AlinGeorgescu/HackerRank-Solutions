@@ -2,76 +2,35 @@
 
 using namespace std;
 
-vector<string> split_string(string);
-
 /*
  * Completed the aVeryBigSum function below.
  */
-long aVeryBigSum(int n, vector<long> ar) {
-    long sum = 0;
-    
+int diagonalDifference(vector < vector<int> > a, int n) {
+    int sumPD = 0, sumSD = 0;
+
     for (int i = 0; i < n; ++i) {
-        sum += ar[i];
+        sumPD += a[i][i];
+        sumSD += a[i][n - i - 1];
     }
-    
-    return sum;
+
+    // reuse of sumPD variable as the wanted difference
+    sumPD = sumPD - sumSD;
+    if (sumPD > 0)
+        return sumPD;
+    else
+        return sumPD * (-1);
 }
 
-int main()
-{
-    ofstream fout(getenv("OUTPUT_PATH"));
-
+int main() {
     int n;
     cin >> n;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-    string ar_temp_temp;
-    getline(cin, ar_temp_temp);
-
-    vector<string> ar_temp = split_string(ar_temp_temp);
-
-    vector<long> ar(n);
-
-    for (int ar_itr = 0; ar_itr < n; ar_itr++) {
-        long ar_item = stol(ar_temp[ar_itr]);
-
-        ar[ar_itr] = ar_item;
+    vector< vector<int> > a(n,vector<int>(n));
+    for(int a_i = 0;a_i < n;a_i++){
+       for(int a_j = 0;a_j < n;a_j++){
+          cin >> a[a_i][a_j];
+       }
     }
-
-    long result = aVeryBigSum(n, ar);
-
-    fout << result << "\n";
-
-    fout.close();
-
+    int result = diagonalDifference(a, n);
+    cout << result << endl;
     return 0;
-}
-
-vector<string> split_string(string input_string) {
-    string::iterator new_end = unique(input_string.begin(), input_string.end(), [] (const char &x, const char &y) {
-        return x == y and x == ' ';
-    });
-
-    input_string.erase(new_end, input_string.end());
-
-    while (input_string[input_string.length() - 1] == ' ') {
-        input_string.pop_back();
-    }
-
-    vector<string> splits;
-    char delimiter = ' ';
-
-    size_t i = 0;
-    size_t pos = input_string.find(delimiter);
-
-    while (pos != string::npos) {
-        splits.push_back(input_string.substr(i, pos - i));
-
-        i = pos + 1;
-        pos = input_string.find(delimiter, i);
-    }
-
-    splits.push_back(input_string.substr(i, min(pos, input_string.length()) - i + 1));
-
-    return splits;
 }
