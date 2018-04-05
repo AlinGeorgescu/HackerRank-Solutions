@@ -1,36 +1,32 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
-using namespace std;
+// Using declarations better than namespace.
+using std::cout;
+using std::cin;
+using std::vector;
 
-/*
- * Completed the aVeryBigSum function below.
- */
-int diagonalDifference(vector < vector<int> > a, int n) {
-    int sumPD = 0, sumSD = 0;
-
+// Solving function (sum of an array).
+long aVeryBigSum(unsigned int n, vector<long> array) {
+    long sum = 0;
+    
     for (int i = 0; i < n; ++i) {
-        sumPD += a[i][i];
-        sumSD += a[i][n - i - 1];
+        sum += array[i];
     }
-
-    // reuse of sumPD variable as the wanted difference
-    sumPD = sumPD - sumSD;
-    if (sumPD > 0)
-        return sumPD;
-    else
-        return sumPD * (-1);
+    
+    return sum;
 }
 
-int main() {
-    int n;
+int main()
+{
+    unsigned int n;
     cin >> n;
-    vector< vector<int> > a(n,vector<int>(n));
-    for(int a_i = 0;a_i < n;a_i++){
-       for(int a_j = 0;a_j < n;a_j++){
-          cin >> a[a_i][a_j];
-       }
-    }
-    int result = diagonalDifference(a, n);
-    cout << result << endl;
+    vector<long> array(n);
+
+    for (int i = 0; i < n; ++i)
+        cin >> array[i];
+
+    cout << aVeryBigSum(n, array) << '\n';
+    
     return 0;
 }

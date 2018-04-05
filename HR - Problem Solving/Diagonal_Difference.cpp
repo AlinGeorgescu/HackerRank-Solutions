@@ -1,11 +1,17 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
-using namespace std;
+// Using declarations better than namespace.
+using std::cin;
+using std::cout;
+using std::vector;
 
-/*
- * Completed the aVeryBigSum function below.
- */
-int diagonalDifference(vector < vector<int> > a, int n) {
+
+int diagonalDifference(vector< vector<int> > a, int n) {
+    /**
+     * PD = primary diagonal
+     * SD = secondary diagonal
+     */ 
     int sumPD = 0, sumSD = 0;
 
     for (int i = 0; i < n; ++i) {
@@ -24,13 +30,16 @@ int diagonalDifference(vector < vector<int> > a, int n) {
 int main() {
     int n;
     cin >> n;
-    vector< vector<int> > a(n,vector<int>(n));
-    for(int a_i = 0;a_i < n;a_i++){
-       for(int a_j = 0;a_j < n;a_j++){
-          cin >> a[a_i][a_j];
-       }
+    // Matrix as vector of vectors.
+    vector< vector<int> > a(n, vector<int>(n));
+
+    // Reading the matrix.
+    for(int i = 0; i < n; ++i){
+        for(int j = 0; j < n; ++j){
+            cin >> a[i][j];
+        }
     }
-    int result = diagonalDifference(a, n);
-    cout << result << endl;
+
+    cout << diagonalDifference(a, n) << '\n';
     return 0;
 }

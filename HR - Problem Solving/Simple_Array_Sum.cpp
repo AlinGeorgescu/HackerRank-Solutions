@@ -1,12 +1,17 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
-using namespace std;
+// Using declarations better than namespace.
+using std::cin;
+using std::cout;
+using std::vector;
 
-int simpleArraySum(int n, vector <int> ar) {
-    int i, s = 0;
+// Array sum function.
+int simpleArraySum(vector <int> array) {
+    int s = 0;
 
-    for(i = 0; i < n; ++i)
-        s += ar[i];
+    for(int i = 0; i < array.size(); ++i)
+        s += array[i];
 
     return s;
 }
@@ -14,13 +19,12 @@ int simpleArraySum(int n, vector <int> ar) {
 int main() {
     int n;
     cin >> n;
-    vector<int> ar(n);
+    vector<int> array(n);
 
-    for(int ar_i = 0; ar_i < n; ar_i++){
-       cin >> ar[ar_i];
+    for(int i = 0; i < n; ++i){
+       cin >> array[i];
     }
-    int result = simpleArraySum(n, ar);
-    cout << result << endl;
-
+    
+    cout << simpleArraySum(array) << '\n';
     return 0;
 }

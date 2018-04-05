@@ -1,18 +1,19 @@
 #include <iostream>
 
-using namespace std;
+// Using declarations better than namespace.
+using std::cin;
+using std::cout;
 
+// Sum of 2 integers.
 int solveMeFirst(int a, int b) {
- return a + b;
+    return a + b;
 }
 
 int main() {
-  int num1, num2;
-  int sum;
+    int num1, num2;
 
-  cin >> num1 >> num2;
-  sum = solveMeFirst(num1, num2);
-  cout << sum;
- 
-  return 0;
+    cin >> num1 >> num2;
+    cout << solveMeFirst(num1, num2);
+
+    return 0;
 }
