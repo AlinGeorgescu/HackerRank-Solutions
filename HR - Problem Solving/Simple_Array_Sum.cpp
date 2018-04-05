@@ -10,7 +10,7 @@ using std::vector;
 int simpleArraySum(vector <int> array) {
     int s = 0;
 
-    for(int i = 0; i < array.size(); ++i)
+    for (int i = 0; i < array.size(); ++i)
         s += array[i];
 
     return s;
@@ -21,7 +21,7 @@ int main() {
     cin >> n;
     vector<int> array(n);
 
-    for(int i = 0; i < n; ++i){
+    for (int i = 0; i < n; ++i){
        cin >> array[i];
     }
     

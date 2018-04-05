@@ -18,7 +18,7 @@ void plusMinus(vector<int> array) {
     for (int i = 0; i < n; ++i) {
         if (array[i] > 0)
             ++nrPos;
-        else if(array[i] < 0)
+        else if (array[i] < 0)
             ++nrNeg;
         else
             ++nrZero;
