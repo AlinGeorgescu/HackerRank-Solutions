@@ -1,3 +1,2 @@
 # HackerRank-Solutions
-HackerRank Solutions
-Coded using C++
+HackerRank Solutions C++
