@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Simple Array Sum 
+ */
 #include <iostream>
 #include <vector>
 

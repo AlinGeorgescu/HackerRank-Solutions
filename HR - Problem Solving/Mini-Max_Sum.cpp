@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Mini-Max Sum
+ */
 #include <iostream>
 
 // Using declarations better than namespace.

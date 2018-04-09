@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * A Very Big Sum 
+ */
 #include <iostream>
 #include <vector>
 
@@ -17,8 +21,7 @@ long aVeryBigSum(unsigned int n, vector<long> array) {
     return sum;
 }
 
-int main()
-{
+int main() {
     unsigned int n;
     cin >> n;
     vector<long> array(n);

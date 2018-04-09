@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Kangaroo 
+ */
 #include <iostream>
 #include <string>
 
@@ -8,16 +12,20 @@ using std::string;
 
 //  Cheack if they can land on the same location at the same time.
 string kangaroo(int x1, int v1, int x2, int v2) {
-    // x1 < x2
-    if (v1 < v2)
+    int DeltaX, DeltaV;
+    
+    if(v1 <= v2)
         return "NO";
 
-    while (x1 < x2) {
-        x1 += v1;
-        x2 += v2;
-    }
-    
-    if (x1 == x2)
+    DeltaX = x1 - x2;
+    DeltaV = v1 - v2;
+
+    if (DeltaX < 0 )
+        DeltaX *= -1;
+    if (DeltaV < 0)
+        DeltaV *= -1;
+
+    if(DeltaX % DeltaV == 0)
         return "YES";
     else
         return "NO";

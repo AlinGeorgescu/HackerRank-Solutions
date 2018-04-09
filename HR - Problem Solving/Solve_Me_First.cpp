@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Solve Me First 
+ */
 #include <iostream>
 
 // Using declarations better than namespace.

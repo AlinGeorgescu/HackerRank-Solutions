@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Time Conversion 
+ */
 #include <iostream>
 #include <cstring>
 #include <iomanip> // Number fill and width.

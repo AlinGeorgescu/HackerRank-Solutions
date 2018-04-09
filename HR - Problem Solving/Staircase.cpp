@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Staircase 
+ */
 #include <iostream>
 
 // Using declarations better than namespace.

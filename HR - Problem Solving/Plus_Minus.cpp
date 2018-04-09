@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Plus Minus 
+ */
 #include <iostream>
 #include <vector>
 #include <iomanip> // Precision

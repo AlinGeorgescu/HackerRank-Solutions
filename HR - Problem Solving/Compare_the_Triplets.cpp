@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Compare the Triplets
+ */
 #include <iostream>
 
 // Using declarations better than namespace.

@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Diagonal Difference 
+ */
 #include <iostream>
 #include <vector>
 
