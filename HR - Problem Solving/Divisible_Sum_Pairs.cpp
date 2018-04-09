@@ -1,6 +1,6 @@
 /**
  * Copyright 2018
- * Apple and Orange
+ * Divisible Sum Pairs
  */
 #include <iostream>
 #include <vector>
