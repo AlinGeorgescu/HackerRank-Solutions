@@ -6,14 +6,12 @@
 #include <vector>
 #include <iomanip> // Precision
 
-// Using declarations better than namespace.
 using std::cin;
 using std::cout;
 using std::vector;
 using std::fixed;
 using std::setprecision;
 
-// Solving function
 void plusMinus(vector<int> array) {
     double nrPos = 0, nrNeg = 0, nrZero = 0;
     int n = array.size();
