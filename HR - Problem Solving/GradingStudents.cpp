@@ -4,7 +4,6 @@
  */
 #include <iostream>
 
-// Using declarations better than namespace.
 using std::cin;
 using std::cout;
 
