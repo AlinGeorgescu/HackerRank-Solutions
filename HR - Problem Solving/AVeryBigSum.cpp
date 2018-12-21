@@ -5,12 +5,10 @@
 #include <iostream>
 #include <vector>
 
-// Using declarations better than namespace.
 using std::cout;
 using std::cin;
 using std::vector;
 
-// Solving function (sum of an array).
 long aVeryBigSum(unsigned int n, vector<long> array) {
     long sum = 0;
     
