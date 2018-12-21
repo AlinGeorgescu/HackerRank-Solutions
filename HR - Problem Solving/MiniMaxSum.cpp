@@ -4,7 +4,6 @@
  */
 #include <iostream>
 
-// Using declarations better than namespace.
 using std::cin;
 using std::cout;
 
@@ -30,6 +29,6 @@ int main() {
      * Smallest sum is the total sum - largest element.
      * Largest sum is the total sum - smallest element.
      */
-    cout << sum - max << " " << sum - min << '\n';
+    cout << sum - max << ' ' << sum - min << '\n';
     return 0;
 }
