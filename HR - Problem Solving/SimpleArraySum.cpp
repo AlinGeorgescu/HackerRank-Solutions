@@ -5,7 +5,6 @@
 #include <iostream>
 #include <vector>
 
-// Using declarations better than namespace.
 using std::cin;
 using std::cout;
 using std::vector;
