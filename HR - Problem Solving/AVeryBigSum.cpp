@@ -21,11 +21,14 @@ long aVeryBigSum(unsigned int n, vector<long> array) {
 
 int main() {
     unsigned int n;
+    vector<long> array;
+    
     cin >> n;
-    vector<long> array(n);
+    array.resize(n);
 
-    for (int i = 0; i < n; ++i)
+    for (int i = 0; i < n; ++i) {
         cin >> array[i];
+    }
 
     cout << aVeryBigSum(n, array) << '\n';
     
