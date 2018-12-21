@@ -4,11 +4,9 @@
  */
 #include <iostream>
 
-// Using declarations better than namespace.
 using std::cin;
 using std::cout;
 
-// Sum of 2 integers.
 int solveMeFirst(int a, int b) {
     return a + b;
 }
