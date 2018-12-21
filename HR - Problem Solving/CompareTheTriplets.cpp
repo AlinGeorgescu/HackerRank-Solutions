@@ -4,7 +4,6 @@
  */
 #include <iostream>
 
-// Using declarations better than namespace.
 using std::cin;
 using std::cout;
 
@@ -26,6 +25,7 @@ int main() {
     }
 
     // Print the 2 scores.
-    cout << aScore << " " << bScore;
+    cout << aScore << ' ' << bScore << '\n';
+
     return 0;
 }
