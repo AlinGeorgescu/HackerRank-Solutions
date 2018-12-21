@@ -15,7 +15,7 @@ int main() {
     int num1, num2;
 
     cin >> num1 >> num2;
-    cout << solveMeFirst(num1, num2);
+    cout << solveMeFirst(num1, num2) << '\n';
 
     return 0;
 }
