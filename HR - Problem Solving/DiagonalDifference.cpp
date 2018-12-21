@@ -5,7 +5,6 @@
 #include <iostream>
 #include <vector>
 
-// Using declarations better than namespace.
 using std::cin;
 using std::cout;
 using std::vector;
@@ -25,10 +24,11 @@ int diagonalDifference(vector< vector<int> > a, int n) {
 
     // reuse of sumPD variable as the wanted difference
     sumPD = sumPD - sumSD;
-    if (sumPD > 0)
+    if (sumPD > 0) {
         return sumPD;
-    else
+    } else {
         return sumPD * (-1);
+    }
 }
 
 int main() {
@@ -45,5 +45,6 @@ int main() {
     }
 
     cout << diagonalDifference(a, n) << '\n';
+
     return 0;
 }
