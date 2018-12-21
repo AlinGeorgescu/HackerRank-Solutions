@@ -5,12 +5,11 @@
 #include <iostream>
 #include <vector>
 
-// Using declarations better than namespace.
 using std::cin;
 using std::cout;
 using std::vector;
 
-int divisibleSumPairs(int n, int k, vector <int> array) {
+int divisibleSumPairs(int n, int k, vector<int> array) {
     int number = 0;
 
     for (int i = 0; i < array.size(); ++i) {
@@ -25,10 +24,10 @@ int divisibleSumPairs(int n, int k, vector <int> array) {
 
 int main() {
     int n, k;
+    vector<int> array;
 
     cin >> n >> k;
-
-    vector<int> array(n);
+    array.resize(n);
 
     for(int i = 0; i < n; ++i){
        cin >> array[i];
