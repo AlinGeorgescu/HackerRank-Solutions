@@ -1,3 +1,7 @@
+/**
+ * Copyright 2018
+ * Insert a Node at the Tail of a Linked List
+ */
 #include <bits/stdc++.h>
 
 using namespace std;
