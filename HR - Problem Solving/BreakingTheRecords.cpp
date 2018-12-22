@@ -19,11 +19,11 @@ vector<int> breakingRecords(vector<int> scores) {
         if (scores[i] > max) {
             max = scores[i];
             ++numMax;
-        }
-
-        if (scores[i] < min) {
-            min = scores[i];
-            ++numMin;
+        } else {
+            if (scores[i] < min) {
+                min = scores[i];
+                ++numMin;
+            }
         }
     }
 
