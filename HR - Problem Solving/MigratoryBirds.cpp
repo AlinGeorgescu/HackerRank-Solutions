@@ -37,7 +37,7 @@ int main(){
         cin >> arr[i];
     }
 
-    cout <<  migratoryBirds(arr) << '\n';
+    cout << migratoryBirds(arr) << '\n';
 
     return 0;
 }
