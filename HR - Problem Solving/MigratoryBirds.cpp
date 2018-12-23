@@ -26,7 +26,7 @@ int migratoryBirds(vector<int> arr) {
     return mostFreqElem;
 }
 
-int main(){
+int main() {
     int n;
     vector<int> arr;
 
