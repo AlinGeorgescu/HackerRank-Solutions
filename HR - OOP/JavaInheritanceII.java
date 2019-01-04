@@ -7,7 +7,7 @@ class Arithmetic {
 final class Adder extends Arithmetic {
 }
 
-public class JavaInheritanceII {
+public final class JavaInheritanceII {
     private JavaInheritanceI() {
     }
 
