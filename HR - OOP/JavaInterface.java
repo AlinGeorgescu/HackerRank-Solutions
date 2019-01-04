@@ -23,8 +23,8 @@ class MyCalculator implements AdvancedArithmetic {
     }
 }
 
-final class Solution {
-    private Solution() {
+final class JavaInterface {
+    private JavaInterface() {
     }
 
     /*
