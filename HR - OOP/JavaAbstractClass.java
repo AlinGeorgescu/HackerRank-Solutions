@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-abstract class Book{
+abstract class Book {
     String title;
 
     abstract void setTitle(String s);
 
-    String getTitle(){
+    String getTitle() {
         return title;
     }
 
@@ -17,8 +17,11 @@ final class MyBook extends Book {
     }
 }
 
-public class Main{
-    public static void main(String []args){
+public class JavaAbstractClass {
+    private JavaAbstractClass() {
+    }
+
+    public static void main(String []args) {
         Scanner sc = new Scanner(System.in);
         String title = sc.nextLine();
         MyBook new_novel = new MyBook();
