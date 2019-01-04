@@ -23,7 +23,7 @@ class MyCalculator implements AdvancedArithmetic {
     }
 }
 
-final class JavaInterface {
+public final class JavaInterface {
     private JavaInterface() {
     }
 
