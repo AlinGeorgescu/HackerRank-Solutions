@@ -18,7 +18,7 @@ public class JavaInheritanceI {
 	private JavaInheritanceI() {
 	}
 
-	public static void main(final String args[]) {
+	public static void main(final String[] args) {
 		Bird bird = new Bird();
 		bird.walk();
 		bird.fly();
