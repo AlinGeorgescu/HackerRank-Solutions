@@ -14,7 +14,10 @@ final class Bird extends Animal {
     }
 }
 
-public class Solution {
+public class JavaInheritanceI {
+	private JavaInheritanceI() {
+	}
+
 	public static void main(final String args[]) {
 		Bird bird = new Bird();
 		bird.walk();
