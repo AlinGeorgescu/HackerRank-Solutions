@@ -14,7 +14,7 @@ final class Bird extends Animal {
     }
 }
 
-public class JavaInheritanceI {
+public final class JavaInheritanceI {
 	private JavaInheritanceI() {
 	}
 
