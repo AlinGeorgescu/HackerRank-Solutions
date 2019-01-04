@@ -4,7 +4,7 @@ class Animal {
 	}
 }
 
-class Bird extends Animal {
+final class Bird extends Animal {
 	void fly() {
 		System.out.println("I am flying");
 	}
@@ -15,10 +15,10 @@ class Bird extends Animal {
 }
 
 public class Solution {
-   public static void main(final String args[]) {
-	  Bird bird = new Bird();
-	  bird.walk();
-	  bird.fly();
-      bird.sing();
-   }
+	public static void main(final String args[]) {
+		Bird bird = new Bird();
+		bird.walk();
+		bird.fly();
+		bird.sing();
+	}
 }
