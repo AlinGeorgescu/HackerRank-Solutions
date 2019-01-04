@@ -21,7 +21,7 @@ public class JavaAbstractClass {
     private JavaAbstractClass() {
     }
 
-    public static void main(String []args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String title = sc.nextLine();
         MyBook new_novel = new MyBook();
