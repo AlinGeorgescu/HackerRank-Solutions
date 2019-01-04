@@ -20,8 +20,8 @@ class Soccer extends Sports {
     }
 }
 
-public final class JavaMethodOverriding {
-    private JavaMethodOverriding() {
+public final class JavaMethodOverridingI {
+    private JavaMethodOverridingI() {
     }
 
     public static void main(final String[] args) {
