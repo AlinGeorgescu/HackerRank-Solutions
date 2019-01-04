@@ -7,8 +7,11 @@ class Arithmetic {
 final class Adder extends Arithmetic {
 }
 
-public class Solution{
-    public static void main(String []args){
+public class JavaInheritanceII {
+    private JavaInheritanceI() {
+    }
+
+    public static void main(final String []args) {
         // Create a new Adder object
         Adder a = new Adder();
         
