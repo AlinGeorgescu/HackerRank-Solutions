@@ -17,7 +17,7 @@ final class MyBook extends Book {
     }
 }
 
-public class JavaAbstractClass {
+public final class JavaAbstractClass {
     private JavaAbstractClass() {
     }
 
